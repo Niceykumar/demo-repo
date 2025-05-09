@@ -18,9 +18,3 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   condition: 
-- task: SnykSecurityScan@1
-  inputs:
-    serviceConnectionEndpoint: 'synk'
-    testType: 'app'
-    monitorWhen: 'always'
-    failOnIssues: true

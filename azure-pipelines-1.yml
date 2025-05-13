@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: SnykSecurityScan@1
   inputs:
-    serviceConnectionEndpoint: 'synk'
     testType: 'app'
-    monitorWhen: 'noIssuesFound'
+    severityThreshold: 'medium'
     failOnIssues: true
+    monitorWhen: 'noIssuesFound'
